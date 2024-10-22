@@ -9,4 +9,4 @@ place_for_book = book * place
 volume_2 = volume * (1024**2)
 
 quantity = volume_2/place_for_book
-print("Количество книг, помещающихся на дискету:", round(quantity))
+print("Количество книг, помещающихся на дискету:", int(quantity))
