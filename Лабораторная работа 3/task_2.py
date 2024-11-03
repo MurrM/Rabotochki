@@ -8,4 +8,6 @@ def find_common_participants(str1, str2, n=','):
 participants_first_group = "Иванов|Петров|Сидоров"
 participants_second_group = "Петров|Сидоров|Смирнов"
 
-find_common_participants(participants_first_group, participants_second_group, '|')
+participants = find_common_participants(participants_first_group, participants_second_group, n='|')
+print(participants)
+
