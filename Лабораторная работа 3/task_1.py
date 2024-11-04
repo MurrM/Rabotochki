@@ -1,4 +1,3 @@
-# TODO Напишите функцию для поиска индекса товара
 def find_index(items,item):
     for index_, current_item in enumerate(items):
         if current_item == item:
@@ -8,7 +7,7 @@ items_list = ['яблоко', 'банан', 'апельсин', 'груша', '�
 
 for find_item in ['банан', 'груша', 'персик']:
     index_item = find_index(items_list, find_item)
-    if index_item is not None:
+    if index_item:
         print(f"Первое вхождение товара '{find_item}' имеет индекс {index_item}.")
     else:
         print(f"Товар '{find_item}' не найден в списке.")
