@@ -35,7 +35,7 @@ class Vk:
 
     def add_friends(self, friend: int) -> None:
         """
-        Добавление новых друзей.
+        Добавление новых друзей
 
         :param friend: Количество новых друзей
 
@@ -52,12 +52,11 @@ class Vk:
 
     def delete_message(self, message: int) -> None:
         """
-        Удаление сообщений.
+        Удаление сообщений
 
         :param message: Количество удаляемых сообщений
 
         :raise ValueError: Если количество удаляемых сообщений отрицательное число или меньше 0
-
         Примеры:
         >>> vk = Vk(70, 100)
         >>> vk.delete_message(10)
@@ -96,6 +95,7 @@ class App:
     def update(self, version: float) -> None:
         """
         Обновление версии приложения
+        
         :param version: Новая версия приложения
 
         :raise ValueError: Если новая версия совпадает с текущей
@@ -127,7 +127,6 @@ class Laptop:
 
         :param name: Название модели ноутбука
         :param charge_level: Уровень заряда ноутбука
-
         Пример:
         >>> laptop = Laptop("Macbook air", 91)
         """
@@ -161,7 +160,7 @@ class Laptop:
 
     def discharge(self, charge_: int) -> None:
         """
-        Снижение уровня заряда.
+        Снижение уровня заряда
 
         :param charge_: На сколько снижается уровень заряда
 
@@ -174,4 +173,4 @@ class Laptop:
 
 if __name__ == "__main__":
     doctest.testmod()
-    pass
+    
